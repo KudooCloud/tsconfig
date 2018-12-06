@@ -1,7 +1,32 @@
 # tsconfig
-All Kudoo's default and standard Typesecript settings
 
-Currently this will cover
-* TSConfig
-* package.json scripts
-* TSLint
+> Shared [TypeScript config](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) for my projects
+
+
+## Install
+
+```
+$ npm install --save-dev 
+```
+
+
+## Usage
+
+`tsconfig.json`
+
+```json
+{
+	"extends": "",
+	"compilerOptions": {
+		"outDir": "dist",
+		"lib": [
+			"es2018"
+		]
+	}
+}
+```
+
+
+## License
+
+MIT © [Sindre Sorhus](https://sindresorhus.com)
