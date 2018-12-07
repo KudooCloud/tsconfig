@@ -1,6 +1,6 @@
 {
   "name": "@kudoo/tsconfig",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "> Shared [TypeScript config](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) for my projects",
   "main": "index.js",
   "scripts": {
