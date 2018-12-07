@@ -17,16 +17,21 @@ $ npm install --save-dev @kudoo/tsconfig
 ```json
 {
 	"extends": "@kudoo/tsconfig",
-	"compilerOptions": {
-		"outDir": "dist",
-		"lib": [
-			"es2018"
-		]
-	}
 }
 ```
-
+## NPM scripts
+It's also a good idea to include these scripts
+```json
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch",
+    "build": "npm run build:types && npm run build:js",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "start": "cd lib && node index.js"
+```
 
 ## License
 
-MIT © [Sindre Sorhus](https://sindresorhus.com)
+MIT 
