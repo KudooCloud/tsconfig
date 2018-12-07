@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save-dev 
+$ npm install --save-dev @kudoo/tsconfig
 ```
 
 
@@ -16,7 +16,7 @@ $ npm install --save-dev
 
 ```json
 {
-	"extends": "",
+	"extends": "@kudoo/tsconfig",
 	"compilerOptions": {
 		"outDir": "dist",
 		"lib": [
